@@ -1,0 +1,35 @@
+@import './variables.scss';
+body {
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $textColor;
+  margin: 0;
+  background: #fcfcfc;
+  overflow-x: hidden;
+  width: 100vw;
+  a {
+    text-decoration: none;
+    color: $textColor !important;
+  }
+
+  p {
+    margin: 8px 0;
+    line-height: 20px;
+  }
+  input {
+    font-family: monospace;
+    color: $textColor;
+    &::placeholder {
+      opacity: .7;
+    }
+  }
+  .no-data-msg {
+    padding: 0 32px;
+    border: 2px dashed #aaa;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
